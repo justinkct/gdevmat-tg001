@@ -19,9 +19,9 @@ void draw()
    line(-5, i, 5, i);
   }
   
-  //drawLinearFunction();
+  drawLinearFunction();
   drawQuadraticFunction();
-  //drawCircle();
+  drawCircle();
   drawSineWave();
 }
 
@@ -53,12 +53,11 @@ void drawCircle()
  }
 }
 
-float i = -300;
 void drawSineWave()
 {
  for (float x = -300; x < 300; x+= 0.1f)
  {
   stroke(0, 0, 255);
-  circle((x * 10, 25 * (float)Math.sin(x--), 2); 
+  circle(x * 10, 25 * (float)Math.sin(x), 2); 
  }
 }
